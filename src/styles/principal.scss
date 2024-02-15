@@ -1,1 +1,18 @@
 //importar todos los estilos + fuentes
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'global';
+
+//disposicion
+@import "disposicion/header";
+@import "disposicion/footer";
+@import "disposicion/index";
+
+
+//presentacion
+@import "presentacion/header";
+@import "presentacion/footer";
+@import "presentacion/index";

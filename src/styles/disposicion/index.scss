@@ -1,0 +1,93 @@
+/* INTRODUCCION */
+
+.indexIntro {
+    .intro-info {
+        position: relative;
+        top: 50%;
+    }
+  }
+  
+  /* SERENTIS */
+  .indexSerentis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* OPINIONES */
+  #opiniones-seccion {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .opinion {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  
+      .opinion-img {
+        align-self: center;
+      }
+    }
+  }
+  
+  /* REDES SOCIALES */
+  #rrss-title-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .rrss-icons {
+      display: flex;
+      gap: 20px;
+    }
+  
+    
+      
+  }
+  
+  /* PARTNERS */
+  .partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* MEDIA QUERIES */
+
+
+@media screen and (min-width: 1550px) {
+    #opiniones-seccion .opinion {
+      align-items: center;
+    }
+
+}
+
+  @media screen and (max-width: 800px) {
+    #opiniones-seccion .opinion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #opiniones-seccion .opinion .opinion-img {
+        align-self: center;
+    }
+
+    #opiniones-seccion .opinion .opinion-text {
+        text-align: center;
+        padding: 30px;
+        margin: 30px;
+    }
+}
+
+  
+  /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
+  
+  
+  @media (max-width: 400px) {
+    /*.indexIntro {
+      background-image: url(../../../img/index/index-300.webp);
+    }*/
+  }
+  

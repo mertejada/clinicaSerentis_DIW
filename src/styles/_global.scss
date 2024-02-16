@@ -105,7 +105,6 @@ a{
 }
 
 
-//para que la letra de todo empiece a ser mas grande a partir de desktop
 @include mixin_media_query_min('desktop') {
     
 
@@ -138,7 +137,6 @@ a{
         font-size: 2rem;
     }
 
-    //qque los botones sean mas grandes
     .blue-button,
     .white-noFill-button,
     .blue-noFill-button{
@@ -150,7 +148,6 @@ a{
 }
 
 
-//para que en laptop se vea 0.5 menos que en desktop
 
 
 

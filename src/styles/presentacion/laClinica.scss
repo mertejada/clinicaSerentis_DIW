@@ -58,7 +58,6 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
 }
 
 
-//para que las imagenes de valores sean mas grandes en desktop
 @include mixin_media_query_min('desktop') {
     .values-container{
     

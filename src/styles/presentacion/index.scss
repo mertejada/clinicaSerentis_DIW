@@ -18,9 +18,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
     .intro-info {
       margin-left: 5%;      
     }
-
-    
-    //que el boton este separado del texto
     
   }
   
@@ -116,8 +113,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
   /* MEDIA QUERIES */
 
   @include mixin_media_query_min('desktop') {
-
-    //que la imagen sea la de 600 px 
     
 
     #opiniones-seccion .opinion {
@@ -176,7 +171,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
      
   }
 
-  //que en movil la imagen sea la de 300px
 
   @include mixin_media_query('movil') {
     .indexIntro {
@@ -199,7 +193,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
         margin: 30px;
     }
 
-    //las imagenes dentro de partner mas pequeñas
     .partners img {
       width: 30%;
       margin: 20px;

@@ -20,7 +20,6 @@
     flex-flow: column;
     align-items: center;
 
-    //para que el texto este en el centro
     .opinion-text{
       text-align: center;
       align-self: center;
@@ -113,14 +112,12 @@
     }
 
 
-    //partners en columna
     .partners {
       grid-template-columns: 1fr;
     }
   }
   /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
   
-  //para que en movil se muestre en columna el index-serentis
   @include mixin_media_query('tablet') {
     .indexSerentis {
       flex-direction: column;

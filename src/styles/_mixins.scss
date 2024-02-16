@@ -1,5 +1,3 @@
-//&:hover
-//include mixins
 
 @mixin mixin_media_query($valor){
     $tamano: map-get($ruptura, $valor);
@@ -8,7 +6,6 @@
     }
 }
 
-//mixin para minimo
 @mixin mixin_media_query_min($valor){
     $tamano: map-get($ruptura, $valor);
     @media screen and (min-width: $tamano){

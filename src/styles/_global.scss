@@ -15,10 +15,15 @@ body {
     > *{
         margin-bottom: 15%;
     }
+
+    //un import para que tenga menos margen en pantallas pequeñas
+    @include mixin_media_query('tablet') {
+        margin: 10% 5%;
+    }
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.2vw, 1.5rem); /* Tamaño mínimo 1rem, máximo 1.5rem */
     line-height: 1.5;
     margin: 20px 0;
 
@@ -26,14 +31,14 @@ p{
 
 h1{
     font-family: $font-title;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 2.5vw, 4rem); /* Tamaño mínimo 2rem, máximo 4rem */
     color: $color-blue;
     margin: 20px 0;
 }
 
 h2{
     font-family: $font-title;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.8vw, 3rem); /* Tamaño mínimo 1.5rem, máximo 3rem */
     color: $color-blue;
     margin: 20px 0;
 }
@@ -41,7 +46,7 @@ h2{
 h3{
     font-family: $font-title;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.5vw, 2.5rem); /* Tamaño mínimo 1.2rem, máximo 2.5rem */
     color: $color-grey;
     margin: 20px 0;
 }
@@ -49,7 +54,7 @@ h3{
 h4{
     font-family: $font-title;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.2vw, 2rem); /* Tamaño mínimo 1rem, máximo 2rem */
     color: $color-light-blue;
     margin: 20px 0;
 
@@ -57,6 +62,8 @@ h4{
 
 a{
     text-decoration: none;
+    font-size: clamp(1rem, 1.2vw, 1.5rem); /* Tamaño mínimo 1rem, máximo 1.5rem */
+
 }
 
 /* BOTONES */
@@ -102,49 +109,6 @@ a{
 
 .bold{
     font-weight: 600;
-}
-
-
-@include mixin_media_query_min('desktop') {
-    
-
-    p{
-        font-size: 2rem;
-    }
-
-    h1{
-        font-size: 3.5em;
-    }
-
-    h2{
-        font-size: 2.5rem;
-    }
-
-    h3{
-        font-size: 2rem;
-    }
-
-    //h4
-    h4{
-        font-size: 1.5rem;
-    }
-
-    main a{
-        font-size: 2rem;
-    }
-
-    li{
-        font-size: 2rem;
-    }
-
-    .blue-button,
-    .white-noFill-button,
-    .blue-noFill-button{
-        height: 60px;
-        padding: 20px;
-        font-size: 2rem;
-    }
-
 }
 
 

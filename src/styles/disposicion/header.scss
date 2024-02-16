@@ -22,10 +22,12 @@
 .close-menu {
     display: none;
 }
+// MEDIA QUERIES
 
-@media screen and (max-width: 1024px) {
+@include mixin_media_query('tablet') {
     .nav-links {
         display: none;
+        width: max-content;
         
         &.visible {
             z-index: 1;

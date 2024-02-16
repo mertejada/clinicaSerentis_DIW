@@ -17,7 +17,7 @@ close.addEventListener("click", () => { //al contrario
 
 //he tenido que añadir esto porque si no, al cambiar de tamaño de pantalla,el boton que estuviera visible no desaparecia
 window.addEventListener("resize", () => { 
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 800) {
         nav.classList.remove("visible");
         open.style.display = "none";
         close.style.display = "none";
@@ -27,7 +27,7 @@ window.addEventListener("resize", () => {
     }
 });
 
-if (window.innerWidth > 1024) {
+if (window.innerWidth > 800) {
     open.style.display = "none";
     close.style.display = "none";
 } else {

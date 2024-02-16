@@ -2,15 +2,23 @@
 //include mixins
 
 @mixin mixin_media_query($valor){
-    $tamaño: map.get($ruptura, $valor);
-    @media screen and (max-width: $tamaño){
+    $tamano: map-get($ruptura, $valor);
+    @media screen and (max-width: $tamano){
+        @content;
+    }
+}
+
+//mixin para minimo
+@mixin mixin_media_query_min($valor){
+    $tamano: map-get($ruptura, $valor);
+    @media screen and (min-width: $tamano){
         @content;
     }
 }
 
 @mixin mixin_media_query_horizontal($valor, $altura){
-    $tamaño: map.get($ruptura, $valor);
-    @media screen and (max-width: $tamaño) and (max-height: $altura) and (orientation: landscape){
+    $tamano: map-get($ruptura, $valor);
+    @media screen and (max-width: $tamano) and (max-height: $altura) and (orientation: landscape){
         @content;
     }
 }

@@ -12,6 +12,10 @@ body {
 
 #contenido{
     margin:10%;
+
+    > *{
+        margin-bottom: 15%;
+    }
 }
 
 h1{
@@ -35,3 +39,54 @@ h3{
     color: $color-grey;
     margin: 20px 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+/* BOTONES */
+.blue-button,
+.white-noFill-button,
+.blue-noFill-button{
+    font-weight: 600;
+    border-radius: 1em;
+    height: 40px;
+    padding: 10px;
+}
+
+.blue-button {
+    color: #FEFDFB !important;
+    background-color: #3295A6;
+}
+
+.blue-button:hover {
+    background-color: #7e736f;
+    color: #FEFDFB !important;
+    transition:cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.white-noFill-button{
+    color:#FEFDFB;
+    border: 2px #FEFDFB solid;
+}
+
+.blue-noFill-button{
+    color:#3295A6;
+    border: 2px #3295A6 solid;
+}
+
+/*TEXTO*/
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+
+.bold{
+    font-weight: 600;
+}
+
+//para que los textos, titulos etc sean texto mas grande a partir de 1750

@@ -8,5 +8,15 @@
     &-elements {
         display: flex;
         justify-content: space-between;
+        //margen a la izq y derecha
+        margin: 0 20px 0 20px;
     }
+
+    @include mixin_media_query('tablet') {
+        &-elements {
+            gap: 2;
+            flex-direction: column;
+        }
+    }
+    
 }

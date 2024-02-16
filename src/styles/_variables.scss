@@ -5,6 +5,14 @@ $font-title: Poppins;
 $color-blue: #3295A6;
 $color-light-blue: #9CCBD3;
 $color-brown: #635B52;
+$color-dark-brown: #36322d;
 $color-grey: #C5C1BE;
 $color-white: #FEFDFB;
 $color-black: #292929;
+
+$ruptura: (
+    "movil": 320px,
+    "tablet": 1024px,
+    "laptop": 1200px,
+    "desktop": 1550px
+);

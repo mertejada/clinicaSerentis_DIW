@@ -40,9 +40,29 @@
       display: flex;
       gap: 20px;
     }
+  }
+
+  .rrss-carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
   
+  .rrss-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0; 
+    padding: 0;
     
-      
+  }
+  
+  .rrss-slide {
+    flex: 0 0 auto;
+    margin-right: 0;
+    
+  }
+  
+  .rrss-slide img{
+    width: 400px;
   }
   
   /* PARTNERS */
@@ -54,34 +74,29 @@
   }
   
   /* MEDIA QUERIES */
-
-
-@media screen and (min-width: 1550px) {
+  @include mixin_media_query_min('desktop') {
     #opiniones-seccion .opinion {
       align-items: center;
     }
+  }
 
-}
-
-  @media screen and (max-width: 800px) {
+  @include mixin_media_query('tablet') {
     #opiniones-seccion .opinion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
 
     #opiniones-seccion .opinion .opinion-img {
         align-self: center;
     }
 
-    #opiniones-seccion .opinion .opinion-text {
-        text-align: center;
-        padding: 30px;
-        margin: 30px;
-    }
-}
 
-  
+    //partners en columna
+    .partners {
+      grid-template-columns: 1fr;
+    }
+  }
   /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
   
   

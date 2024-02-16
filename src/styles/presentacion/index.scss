@@ -1,13 +1,18 @@
+//mete aqui las varaibles de la imagen
+$indexIntro-300: url(../media/img/index/index-300.webp);
+$indexIntro-600: url(../media/img/index/index-600.webp);
+$indexIntro-900: url(../media/img/index/index-900.webp);
+
 /* INTRODUCCION */
 
 .indexIntro {
-    background: url(../media/img/index/index-900.webp) no-repeat center; 
+    background: $indexIntro-900 no-repeat center; 
     background-size: cover;
     height: 80vh;
     width: 100%;
 
     h1{
-        color: white;
+        color: $color-white;
     }
   
     .intro-info {
@@ -53,11 +58,12 @@
   
     .opinion {
       width: fit-content;
-      border: 1px solid #C5C1BE;
-      box-shadow: 0px 0px 10px 0px #C5C1BE;
+      border: 1px solid $color-grey;
+      box-shadow: 0px 0px 10px 0px $color-grey;
       border-radius: 10rem;
       padding: 1.5rem;
       margin: 30px;
+      
   
       .opinion-img {
         width: 80%;
@@ -101,6 +107,10 @@
   /* MEDIA QUERIES */
 
   @include mixin_media_query_min('desktop') {
+
+    //que la imagen sea la de 600 px 
+    
+
     #opiniones-seccion .opinion {
       border-radius: 500px;
     }
@@ -111,17 +121,31 @@
         
       }
 
-      //que el index tenga todo mucho mas grande
       .indexIntro h1{
         font-size: 7rem;
       }
 
+      .rrss-slide img { //el carousel deja de funcionar correctamente
+        width: 800px;
+      } 
+
   }
 
   @include mixin_media_query('tablet') {
+
+    .indexSerentis {
+      img{
+        width: 60%;
+      }
+    }
+
+    .indexIntro {
+      background-image: $indexIntro-600;
+    }
+
     #opiniones-seccion .opinion {
       border-radius: 300px;
-      height: 800px;
+      height: fit-content;
     }
 
     #opiniones-seccion .opinion .opinion-img {
@@ -134,14 +158,44 @@
         padding: 30px;
         margin: 30px;
     }
+
+    //las imagenes dentro de partner mas pequeñas
+    .partners img {
+      width: 30%;
+      margin: 20px;
+    }
+
+    //las imagenes del carousel mas grandes
+     
   }
-  
-  /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
-  
-  
-  @media (max-width: 400px) {
-    /*.indexIntro {
-      background-image: url(../../../img/index/index-300.webp);
-    }*/
+
+  //que en movil la imagen sea la de 300px
+
+  @include mixin_media_query('movil') {
+    .indexIntro {
+      background-image: $indexIntro-300;
+    }
+
+    #opiniones-seccion .opinion {
+      border-radius: 100px;
+      height: 500px;
+    }
+
+    #opiniones-seccion .opinion .opinion-img {
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    #opiniones-seccion .opinion .opinion-text {
+        text-align: center;
+        padding: 30px;
+        margin: 30px;
+    }
+
+    //las imagenes dentro de partner mas pequeñas
+    .partners img {
+      width: 30%;
+      margin: 20px;
+    }
   }
   

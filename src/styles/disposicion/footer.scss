@@ -12,6 +12,10 @@
         margin: 0 20px 0 20px;
     }
 
+    .footer-social{
+        align-self: center;
+    }
+
     @include mixin_media_query('tablet') {
         &-elements {
             gap: 2;

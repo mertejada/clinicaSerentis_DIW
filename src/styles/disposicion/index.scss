@@ -20,6 +20,12 @@
     flex-flow: column;
     align-items: center;
 
+    //para que el texto este en el centro
+    .opinion-text{
+      text-align: center;
+      align-self: center;
+    }
+
     .opinion {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -99,10 +105,13 @@
   }
   /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
   
-  
-  @media (max-width: 400px) {
-    /*.indexIntro {
-      background-image: url(../../../img/index/index-300.webp);
-    }*/
+  //para que en movil se muestre en columna el index-serentis
+  @include mixin_media_query('tablet') {
+    .indexSerentis {
+      flex-direction: column;
+
+      img{
+        margin-top: 50px;
+      }
+    }
   }
-  

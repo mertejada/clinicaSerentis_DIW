@@ -1,0 +1,56 @@
+.tratamientos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.tratamiento {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 1px solid $color-grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.imagen {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.imagen h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: $color-white;
+    z-index: 1;
+}
+
+.descripcion {
+    width: 85%;
+    height: fit-content;
+    //padding en todos lados menos por arriba
+    padding: 5px 20px 20px 20px; // 20px arriba, 20px derecha, 20px abajo, 20px izquierda
+    margin-bottom: 20px;
+    background-color: $color-white; /* Fondo blanco para la descripción */
+    p{
+        font-size: 1em;
+    }
+}
+
+.treatment-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}

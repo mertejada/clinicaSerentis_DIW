@@ -16,12 +16,12 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
     }
   
     .intro-info {
-      margin-left: 5%;
-  
-      > * {
-        margin: 10px;
-      }
+      margin-left: 5%;      
     }
+
+    
+    //que el boton este separado del texto
+    
   }
   
   /* SERENTIS */
@@ -103,7 +103,16 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
       margin: 20px;
     }
   }
-  
+
+  .prev,
+  .next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff; 
+    text-shadow: #C5C1BE;
+  }
   /* MEDIA QUERIES */
 
   @include mixin_media_query_min('desktop') {
@@ -122,7 +131,7 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
       }
 
       .indexIntro h1{
-        font-size: 7rem;
+        font-size: 5rem;
       }
 
       .rrss-slide img { //el carousel deja de funcionar correctamente
@@ -159,13 +168,11 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
         margin: 30px;
     }
 
-    //las imagenes dentro de partner mas pequeñas
     .partners img {
       width: 30%;
       margin: 20px;
     }
 
-    //las imagenes del carousel mas grandes
      
   }
 

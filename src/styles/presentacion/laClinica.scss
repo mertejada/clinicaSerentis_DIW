@@ -1,0 +1,69 @@
+$bk-img : url('../media/img/laClinica.webp');
+$team-img : url('../media/img/laClinica-about/about-team.webp');
+$philosophy-img : url('../media/img/laClinica-about/about-philosophy.webp');
+$history-img : url('../media/img/laClinica-about/about-history.webp');
+
+.clinica-intro{
+    background: $bk-img no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    
+
+    .intro-info {
+        padding: 50px;
+        width: 50%;
+        height: fit-content;
+
+
+        > * {
+            margin: 10px;
+        }
+    }
+}
+
+.values-container{
+    margin: 50px 0;
+    display: flex;
+    align-self: center;
+    .value{
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+.about-text{
+    h2{
+        font-size: 2.5rem;
+        color: $color-grey;
+        margin: 20px 0;
+    }
+    padding: 100px;
+    font-size: 1.2rem;
+    color: $color-white;
+    font-weight: 100;
+}
+
+#about-history{
+    background: $history-img no-repeat center;
+}
+
+#about-team{
+    background: $team-img no-repeat center;
+    text-align: right;
+}
+
+#about-philosophy{
+    background: $philosophy-img no-repeat center;
+}
+
+
+//para que las imagenes de valores sean mas grandes en desktop
+@include mixin_media_query_min('desktop') {
+    .values-container{
+    
+        .value{
+            width: 500px;
+        }
+    }
+}

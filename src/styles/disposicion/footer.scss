@@ -22,5 +22,13 @@
             flex-direction: column;
         }
     }
+
+    //para que en desktop se vean las imagenes mas grandes
+    @include mixin_media_query_min('desktop') {
+        .footer-logos img{
+            width: 100px;
+            padding: 20px;
+        }
+    }
     
 }

@@ -70,6 +70,21 @@
   .rrss-slide img{
     width: 400px;
   }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
   
   /* PARTNERS */
   .partners {

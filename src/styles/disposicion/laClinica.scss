@@ -4,54 +4,16 @@ $philosophy-img : url('../media/img/laClinica-about/about-philosophy.webp');
 $history-img : url('../media/img/laClinica-about/about-history.webp');
 
 .clinica-intro{
-    background: $bk-img no-repeat center;
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
     display: flex;
-    align-items: center; 
-
-    .intro-info {
-        padding: 50px;
-        width: 50%;
-        height: fit-content;
-
-
-        > * {
-            margin: 10px;
-        }
-    }
+    align-items: center;
 }
 
 .values-container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0;
     flex-wrap: wrap;
-
-    .value{
-        width: 250px;
-        margin: 20px;
-    }
 }
 
-.about-text{
-    padding: 100px;
-    font-size: 1.2rem;
-}
-
-#about-history{
-    background: $history-img no-repeat center;
-}
-
-#about-team{
-    background: $team-img no-repeat center;
-    text-align: right;
-}
-
-#about-philosophy{
-    background: $philosophy-img no-repeat center;
-}
 
 

@@ -1,25 +1,33 @@
-$bk-img : url('../media/img/laClinica.webp');
+//$bk-img : url('../media/img/laClinica.webp');
+$laClinica-2100 : url('../media/img/laClinica/laClinica-2100px.webp');
+$laClinica-1550 : url('../media/img/laClinica/laClinica-1550px.webp');
+$laClinica-1200 : url('../media/img/laClinica/laClinica-1200px.webp');
+$laClinica-800 : url('../media/img/laClinica/laClinica-800px.webp');
+$laClinica-300 : url('../media/img/laClinica/laClinica-300px.webp');
+
 $team-img : url('../media/img/laClinica-about/about-team.webp');
 $philosophy-img : url('../media/img/laClinica-about/about-philosophy.webp');
 $history-img : url('../media/img/laClinica-about/about-history.webp');
 
 .clinica-intro{
-    background: $bk-img no-repeat center;
+    background: $laClinica-2100 no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: fit-content; //
     width: 100%;
     
 
     .intro-info {
-        padding: 50px;
+        //padding arriba y padding abajo muy grande: 
+        padding: 35% 10%;
         width: 50%;
-        height: fit-content;
-
 
         > * {
             margin: 10px;
         }
     }
+
+    //mixin para las imagenes de la Clinica
+    
 }
 
 .values-container{
@@ -46,23 +54,59 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
 
 #about-history{
     background: $history-img no-repeat center;
+    background-size: cover;
 }
 
 #about-team{
     background: $team-img no-repeat center;
+    background-size: cover;
     text-align: right;
 }
 
 #about-philosophy{
     background: $philosophy-img no-repeat center;
+    background-size: cover;
+
 }
 
 
 @include mixin_media_query_min('desktop') {
     .values-container{
-    
         .value{
             width: 500px;
         }
+    }
+}
+
+@include mixin_media_query('desktop') {
+    .clinica-intro{
+        background: $laClinica-1550 no-repeat;
+        background-size: cover;
+
+    }
+        
+}
+
+@include mixin_media_query('laptop') { 
+    .clinica-intro{
+        background: $laClinica-1200 no-repeat ;
+        background-size: cover;
+
+    }
+}
+
+
+@include mixin_media_query('tablet') {
+    .clinica-intro{
+        background: $laClinica-800 no-repeat ;
+        background-size: cover;
+
+    }
+}
+
+@include mixin_media_query('movil') {
+    .clinica-intro{
+        background: $laClinica-300 no-repeat center;
+        background-size: cover;
     }
 }

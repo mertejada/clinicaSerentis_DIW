@@ -18,7 +18,7 @@ body {
 
     //un import para que tenga menos margen en pantallas pequeñas
     @include mixin_media_query('tablet') {
-        margin: 10% 5%;
+        margin: 10% 0% 0% 0%; //
     }
 }
 

@@ -45,11 +45,10 @@
 
 @include mixin_media_query('tablet') {
     .nav-links {
-        
         &.visible {
             width: fit-content; 
-            background-color: #fefdfb;
             height: max-content;
+            background-color: #fefdfb;
             padding-bottom: 20%;
             border-radius: 0 0 0 10px;
             box-shadow: #2929297d 0px 0px 5px;

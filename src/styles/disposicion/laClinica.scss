@@ -5,7 +5,7 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
 
 .clinica-intro{
     display: flex;
-    align-items: center;
+    align-items: center; /* Esto alinea los elementos horizontalmente */    
 }
 
 .values-container{

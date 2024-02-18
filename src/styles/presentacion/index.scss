@@ -114,6 +114,7 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
 
   @include mixin_media_query_min('desktop') {
     
+    
 
     #opiniones-seccion .opinion {
       border-radius: 500px;
@@ -134,11 +135,7 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
 
   @include mixin_media_query('tablet') {
 
-    .indexSerentis {
-      img{
-        width: 60%;
-      }
-    }
+    
 
     .indexIntro {
       background-image: $indexIntro-600;
@@ -161,8 +158,9 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
     }
 
     .partners img {
-      width: 30%;
-      margin: 20px;
+      width: 40%;
+      margin: 20px;//
+      padding: 20px;
     }
 
      
@@ -172,6 +170,7 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
   @include mixin_media_query('movil') {
     .indexIntro {
       background-image: $indexIntro-300;
+      
     }
 
     #opiniones-seccion .opinion {
@@ -194,5 +193,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
       width: 30%;
       margin: 20px;
     }
+
   }
   

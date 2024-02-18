@@ -1,12 +1,18 @@
 //mete aqui las varaibles de la imagen
-$indexIntro-300: url(../media/img/index/index-300.webp);
-$indexIntro-600: url(../media/img/index/index-600.webp);
-$indexIntro-900: url(../media/img/index/index-900.webp);
+
+$index-1800: url('../media/img/index/index-1800.webp');
+$index-1550: url('../media/img/index/index-1550.webp');
+$index-1200: url('../media/img/index/index-1200.webp');
+$index-800: url('../media/img/index/index-800.webp');
+
+
+
+
 
 /* INTRODUCCION */
 
 .indexIntro {
-    background: $indexIntro-900 no-repeat center; 
+    background: $index-1800 no-repeat center; 
     background-size: cover;
     height: fit-content;
     width: 100%;
@@ -120,7 +126,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
   @include mixin_media_query_min('desktop') {
     
     
-
     #opiniones-seccion .opinion {
       border-radius: 500px;
     }
@@ -138,11 +143,18 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
 
   }
 
+  @include mixin_media_query('laptop') {
+    .indexIntro {
+      background-image: $index-1550;
+    }
+  }
+
   @include mixin_media_query('tablet') {
 
 
+
     .indexIntro {
-      background-image: $indexIntro-600;
+      background-image: $index-1200;
     }
 
     #opiniones-seccion .opinion {
@@ -173,8 +185,7 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
 
   @include mixin_media_query('movil') {
     .indexIntro {
-      background-image: $indexIntro-300;
-      
+      background-image: $index-800;
     }
 
     #opiniones-seccion .opinion {

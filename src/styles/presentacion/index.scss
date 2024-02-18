@@ -8,7 +8,7 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
 .indexIntro {
     background: $indexIntro-900 no-repeat center; 
     background-size: cover;
-    height: 80vh;
+    height: fit-content;
     width: 100%;
 
     h1{
@@ -16,7 +16,12 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
     }
   
     .intro-info {
-      margin-left: 5%;      
+      padding: 25% 10%;
+        width: 50%;
+
+        > * {
+            margin: 10px;
+        }     
     }
     
   }
@@ -135,7 +140,6 @@ $indexIntro-900: url(../media/img/index/index-900.webp);
 
   @include mixin_media_query('tablet') {
 
-    
 
     .indexIntro {
       background-image: $indexIntro-600;

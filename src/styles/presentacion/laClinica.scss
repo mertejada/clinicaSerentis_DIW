@@ -3,11 +3,23 @@ $laClinica-2100 : url('../media/img/laClinica/laClinica-2100px.webp');
 $laClinica-1550 : url('../media/img/laClinica/laClinica-1550px.webp');
 $laClinica-1200 : url('../media/img/laClinica/laClinica-1200px.webp');
 $laClinica-800 : url('../media/img/laClinica/laClinica-800px.webp');
-$laClinica-300 : url('../media/img/laClinica/laClinica-300px.webp');
+$laClinica-300 : url('../media/img/laClinica/laClinica-600px.webp');
 
-$team-img : url('../media/img/laClinica-about/about-team.webp');
-$philosophy-img : url('../media/img/laClinica-about/about-philosophy.webp');
-$history-img : url('../media/img/laClinica-about/about-history.webp');
+$team-img-1550 : url('../media/img/laClinica-about/about-team-1550.webp');
+$team-img-1200 : url('../media/img/laClinica-about/about-team-1200.webp');
+$team-img-800 : url('../media/img/laClinica-about/about-team-800.webp');
+$team-img-600 : url('../media/img/laClinica-about/about-team-600.webp');
+
+$philosophy-img-1550 : url('../media/img/laClinica-about/about-philosophy-1550.webp');
+$philosophy-img-1200 : url('../media/img/laClinica-about/about-philosophy-1200.webp');
+$philosophy-img-800 : url('../media/img/laClinica-about/about-philosophy-800.webp');
+$philosophy-img-600 : url('../media/img/laClinica-about/about-philosophy-600.webp');
+
+$history-img-1550 : url('../media/img/laClinica-about/about-history-1550.webp');
+$history-img-1200 : url('../media/img/laClinica-about/about-history-1200.webp');
+$history-img-800 : url('../media/img/laClinica-about/about-history-800.webp');
+$history-img-600 : url('../media/img/laClinica-about/about-history-600.webp');
+
 
 .clinica-intro{
     background: $laClinica-2100 no-repeat;
@@ -18,7 +30,7 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
 
     .intro-info {
         //padding arriba y padding abajo muy grande: 
-        padding: 35% 10%;
+        padding: 25% 10%;
         width: 50%;
 
         > * {
@@ -53,18 +65,18 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
 }
 
 #about-history{
-    background: $history-img no-repeat center;
+    background: $history-img-1550 no-repeat center;
     background-size: cover;
 }
 
 #about-team{
-    background: $team-img no-repeat center;
+    background: $team-img-1550 no-repeat center;
     background-size: cover;
     text-align: right;
 }
 
 #about-philosophy{
-    background: $philosophy-img no-repeat center;
+    background: $philosophy-img-1550 no-repeat center;
     background-size: cover;
 
 }
@@ -76,6 +88,9 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
             width: 500px;
         }
     }
+
+    
+
 }
 
 @include mixin_media_query('desktop') {
@@ -84,6 +99,8 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
         background-size: cover;
 
     }
+    
+    
         
 }
 
@@ -93,6 +110,23 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
         background-size: cover;
 
     }
+
+    #about-history{
+        background: $history-img-1200 no-repeat center;
+        background-size: cover;
+    }
+
+    #about-team{
+        background: $team-img-1200 no-repeat center;
+        background-size: cover;
+    }
+
+    #about-philosophy{
+        background: $philosophy-img-1200 no-repeat center;
+        background-size: cover;
+    }
+
+
 }
 
 
@@ -101,12 +135,55 @@ $history-img : url('../media/img/laClinica-about/about-history.webp');
         background: $laClinica-800 no-repeat ;
         background-size: cover;
 
+        .intro-info{
+            padding: 25% 10%;
+            width: 100%;
+        }
+
     }
+
+
+    #about-history{
+        background: $history-img-800 no-repeat center;
+        background-size: cover;
+    }
+
+    #about-team{
+        background: $team-img-800 no-repeat center;
+        background-size: cover;
+    }
+
+    #about-philosophy{
+        background: $philosophy-img-800 no-repeat center;
+        background-size: cover;
+    }
+
+
 }
 
 @include mixin_media_query('movil') {
     .clinica-intro{
         background: $laClinica-300 no-repeat center;
+        background-size: cover;
+
+        .intro-info{
+            padding: 10% 5%;
+            width: 100%;
+        }
+    }
+
+    #about-history{
+        background: $history-img-600 no-repeat center;
+        background-size: cover;
+    }
+
+    #about-team{
+        background: $team-img-600 no-repeat center;
+        background-size: cover;
+    }
+
+    #about-philosophy{
+        background: $philosophy-img-600 no-repeat center;
         background-size: cover;
     }
 }

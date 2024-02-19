@@ -1,8 +1,28 @@
+$treatment-intro: url('../media/img/prueba1.jpg');
+
+.treatment-intro {
+    background: $treatment-intro no-repeat center; 
+    background-size: cover;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+
+    .intro-info{
+        padding: 10%;
+        padding-top: 15%;
+        text-align: center;
+    }
+  
+  }
+
 .tratamientos{
+    //que sea una cuadricula de tratamientos y svayan en filas de 3 elementos 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10%;
 }
 
 .tratamiento {
@@ -22,8 +42,10 @@
 }
 
 .imagen img {
+    height: 200px;
+    //para que se haga cover en el contenido sin que se deforme la imagen
+    object-fit: cover;
     width: 100%;
-    height: auto;
     border-radius: 40px;
 }
 
@@ -41,16 +63,9 @@
     //padding en todos lados menos por arriba
     padding: 5px 20px 20px 20px; // 20px arriba, 20px derecha, 20px abajo, 20px izquierda
     margin-bottom: 20px;
-    background-color: $color-white; /* Fondo blanco para la descripción */
+    //
+    background-color: none; /* Fondo blanco para la descripción */
     p{
         font-size: 1em;
     }
-}
-
-.treatment-intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-
 }

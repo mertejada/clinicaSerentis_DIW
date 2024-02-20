@@ -17,7 +17,7 @@ body {
     }
 
     @include mixin_media_query('tablet') {
-        margin: 10% 0% 0% 0%; //
+        margin: 10% 2% 0% 2%; //significa que el margen de arriba es 10%, el de la derecha 0%, el de abajo 0% y el de la izquierda 0%
     }
 }
 

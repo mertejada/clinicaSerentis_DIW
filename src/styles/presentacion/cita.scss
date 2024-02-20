@@ -1,4 +1,4 @@
-$bk-img : url('../media/img/prueba.jpg');
+$bk-img : url('../media/img/pruebacita6.jpg');
 
 
 #form{
@@ -8,16 +8,21 @@ $bk-img : url('../media/img/prueba.jpg');
     margin: 0%;
 
     input, textarea{
-        border: 1px solid $color-grey;
+        border: none;
         border-radius: 30px;
         margin: 10px;
         padding: 10px;
+        //quiero bajarle opacidad pero con la variable
+        background-color: rgba($color-white, 0.5);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 
     }
 
     h1{
         color: $color-white;
         font-size: 2em;
-        margin: 20px;
+        text-align: center;
+        
     }
+
 }

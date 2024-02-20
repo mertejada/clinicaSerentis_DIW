@@ -52,7 +52,6 @@ h3{
 
 h4{
     font-family: $font-title;
-    font-weight: 300;
     font-size: clamp(1rem, 1.2vw, 2rem);
     color: $color-light-blue;
     margin: 20px 0;
@@ -61,7 +60,7 @@ h4{
 
 a{
     text-decoration: none;
-    font-size: clamp(0.7rem, 1.2vw, 1.5rem); 
+    font-size: clamp(1rem, 1.2vw, 1.5rem); 
 
 }
 
@@ -77,12 +76,12 @@ a{
 
 .blue-button {
     color: #FEFDFB !important;
-    background-color: #3295A6;
+    background-color:$color-blue;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .blue-button:hover {
-    background-color: #7e736f;
+    background-color:$color-brown;
     color: #FEFDFB !important;
     transition:cubic-bezier(0.645, 0.045, 0.355, 1)
 }
@@ -93,8 +92,8 @@ a{
 }
 
 .blue-noFill-button{
-    color:#3295A6;
-    border: 2px #3295A6 solid;
+    color:$color-blue;
+    border: 2px $color-blue solid;
 }
 
 /*TEXTO*/

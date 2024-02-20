@@ -1,0 +1,93 @@
+$treatment-intro: url('../media/img/prueba1.jpg');
+
+.treatment-intro {
+    background: $treatment-intro no-repeat center; 
+    background-size: cover;
+    height: fit-content;
+    width: 100%;
+
+    .intro-info{
+        padding: 10%;
+        padding-top: 15%;
+        text-align: center;
+    }
+  
+  }
+
+.tratamientos{
+    margin: 1%;
+    margin-bottom: 10%;
+    
+}
+
+.tratamiento {
+    border-radius: 40px;
+    border: 1px solid $color-grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width:700px;
+}
+
+.imagen {
+    width: 100%;
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+.imagen img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.imagen h3 {
+    color: $color-white;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.descripcion {
+    width: 85%;
+    height: fit-content;
+    padding: 5px 20px 20px 20px; 
+    margin-bottom: 20px;
+    background-color: none; 
+    p{
+        font-size: 1em;
+    }
+}
+
+
+@include mixin_media_query_min('desktop') {
+    .tratamiento {
+        width: 800px;
+    }
+    
+    
+    .imagen img {
+        height: 500px;
+    }
+  }
+
+
+  @include mixin_media_query('desktop') {
+    .tratamiento {
+        width: 800px;
+    }
+    
+    
+    .imagen img {
+        height: 500px;
+    }
+  }
+
+  @include mixin_media_query('laptop') {
+    .tratamiento {
+        width: 375px;
+    }
+    
+    
+    .imagen img {
+        height: 300px;
+    }
+  }

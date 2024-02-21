@@ -33,6 +33,17 @@ $treatment-intro: url('../media/img/prueba1.jpg');
     overflow: hidden; /* Asegura que la imagen no se desborde */
 }
 
+.imagen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Ajusta la opacidad según tus  /* Ajusta la opacidad según tus necesidades */
+    border-radius: 40px;
+}
+
 .imagen img {
     height: 300px;
     object-fit: cover;
@@ -43,7 +54,7 @@ $treatment-intro: url('../media/img/prueba1.jpg');
 .imagen h3 {
     color: $color-white;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: clamp(1.3rem, 0.5108rem + 0.8649vw, 2rem);
 }
 
 .descripcion {
@@ -60,34 +71,30 @@ $treatment-intro: url('../media/img/prueba1.jpg');
 
 @include mixin_media_query_min('desktop') {
     .tratamiento {
-        width: 800px;
+        width: 40%;
     }
     
     
     .imagen img {
-        height: 500px;
+        height: 400px;
     }
-  }
+    .imagen::after {
+        height: 400px;
+    }
+  } 
 
 
   @include mixin_media_query('desktop') {
     .tratamiento {
-        width: 800px;
+        width: 40%;
     }
     
     
     .imagen img {
-        height: 500px;
+        height: 200px;
     }
-  }
 
-  @include mixin_media_query('laptop') {
-    .tratamiento {
-        width: 375px;
-    }
-    
-    
-    .imagen img {
-        height: 300px;
+    .imagen::after {
+        height: 200px;
     }
   }

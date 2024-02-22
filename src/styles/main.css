@@ -17,7 +17,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   #contenido {
-    margin: 10% 2% 0% 2%;
+    margin: 10% 4% 0% 4%;
   }
 }
 
@@ -64,7 +64,8 @@ a {
 /* BOTONES */
 .blue-button,
 .white-noFill-button,
-.blue-noFill-button {
+.blue-noFill-button,
+.white-button {
   font-weight: 600;
   border-radius: 1em;
   height: 40px;
@@ -93,6 +94,11 @@ a {
   border: 2px #2d8797 solid;
 }
 
+.white-button {
+  color: #292929;
+  background-color: #FEFDFB;
+}
+
 /*TEXTO*/
 .text-align-left {
   text-align: left;
@@ -104,6 +110,10 @@ a {
 
 .bold {
   font-weight: 600;
+}
+
+.brown {
+  color: #C5C1BE;
 }
 
 button {
@@ -310,12 +320,13 @@ button {
   max-width: 500px;
   margin: 50px auto;
   background-color: #FEFDFB;
-  padding: 20px;
+  padding: 0;
 }
 
 .form-element {
   margin-bottom: 15px;
   color: #FEFDFB;
+  /* Resto de tus estilos */
 }
 .form-element label {
   display: block;
@@ -340,17 +351,21 @@ button {
   vertical-align: middle;
 }
 
-.treatment-intro {
-  background: url("../media/img/prueba1.jpg") no-repeat center;
-  background-size: cover;
-  align-items: center;
-  height: fit-content;
-  width: 100%;
+@media screen and (min-width: 800px) {
+  .form-inline {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-group {
+    flex: 1;
+    margin-right: 10px; /* Espacio entre los campos */
+  }
+  .input-group input[type=date] {
+    width: 100%;
+  }
 }
-.treatment-intro .intro-info {
-  padding: 10%;
-  padding-top: 15%;
-  text-align: center;
+.treatments-intro {
+  align-items: center;
 }
 
 .tratamientos {
@@ -360,51 +375,85 @@ button {
   align-items: center;
   gap: 20px;
   margin: 3%;
-  margin-bottom: 10%;
 }
 
 .tratamiento {
   display: flex;
   flex-direction: column;
-  border-radius: 40px;
-  border: 1px solid #C5C1BE;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 300px;
 }
 
 .imagen {
   position: relative;
-  width: 100%;
   overflow: hidden; /* Asegura que la imagen no se desborde */
-}
-
-.imagen img {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 40px;
 }
 
 .imagen h3 {
   position: absolute;
   bottom: 20px;
   left: 15px;
-  color: #FEFDFB;
   z-index: 1;
 }
 
-.descripcion {
-  width: 85%;
-  height: fit-content;
-  padding: 5px 20px 20px 20px;
-  margin-bottom: 20px;
-  background-color: none; /* Fondo blanco para la descripción */
+@media screen and (max-width: 800px) {
+  .tratamientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tratamientos .tratamiento {
+    width: 90%;
+  }
 }
-.descripcion p {
-  font-size: 1em;
+.treatment-intro {
+  display: flex;
+  height: 30vh;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: end;
+  background: url("../media/img/treatments-img/acne-2200.webp") no-repeat;
+  background-size: cover;
+}
+.treatment-intro h1 {
+  margin: 0;
+  color: #FEFDFB;
+}
+.treatment-intro a {
+  padding: 1%;
+  height: fit-content;
 }
 
+.treatment-cont {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10%;
+}
+.treatment-cont a {
+  color: #2d8797;
+  text-decoration: none;
+}
+.treatment-cont .treatment-description article {
+  margin: 0;
+  padding: 10px;
+  padding-top: 0%;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .treatment-cont {
+    display: block;
+  }
+  .treatment-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+  }
+  .treatment-intro * {
+    margin: 4px;
+  }
+}
 .nav-logo {
   width: 150px;
   height: auto;
@@ -524,7 +573,7 @@ button {
   width: 60%;
 }
 .indexSerentis #indexSerentis-text p {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .indexSerentis #indexSerentis-text article {
   padding-top: 2% !important;
@@ -802,6 +851,122 @@ button {
   color: #FEFDFB;
   font-size: 2em;
   text-align: center;
+}
+
+.treatments-intro {
+  background: url("../media/img/tratamientos-intro/tratamientos-2200.webp") no-repeat center;
+  background-size: cover;
+  height: fit-content;
+  width: 100%;
+}
+.treatments-intro .intro-info {
+  padding: 10%;
+  padding-top: 15%;
+  text-align: center;
+}
+
+.tratamientos {
+  margin: 1%;
+  margin-bottom: 10%;
+}
+
+.tratamiento {
+  border-radius: 40px;
+  border: 1px solid #C5C1BE;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+.imagen {
+  width: 100%;
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+.imagen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Ajusta la opacidad según tus  /* Ajusta la opacidad según tus necesidades */
+  border-radius: 40px;
+}
+
+.imagen img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.imagen h3 {
+  color: #FEFDFB;
+  padding: 10px;
+  font-size: clamp(1.3rem, 0.5108rem + 0.8649vw, 2rem);
+}
+
+.descripcion {
+  width: 85%;
+  height: fit-content;
+  padding: 5px 20px 20px 20px;
+  margin-bottom: 20px;
+  background-color: none;
+}
+.descripcion p {
+  font-size: 1em;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: 1550px) {
+  .tratamiento {
+    width: 40%;
+  }
+  .imagen img {
+    height: 400px;
+  }
+  .imagen::after {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .treatments-intro {
+    background: url("../media/img/tratamientos-intro/tratamientos-1550.webp") no-repeat center;
+    background-size: cover;
+  }
+  .tratamiento {
+    width: 40%;
+  }
+  .imagen img {
+    height: 200px;
+  }
+  .imagen::after {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .treatments-intro {
+    background: url("../media/img/tratamientos-intro/tratamientos-1200.webp") no-repeat center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 800px) {
+  .treatments-intro {
+    background: url("../media/img/tratamientos-intro/tratamientos-800.webp") no-repeat center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 320px) {
+  .treatments-intro {
+    background: url("../media/img/tratamientos-intro/tratamientos-600.webp") no-repeat center;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

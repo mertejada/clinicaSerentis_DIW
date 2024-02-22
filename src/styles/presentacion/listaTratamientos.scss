@@ -1,7 +1,11 @@
-$treatment-intro: url('../media/img/prueba1.jpg');
+$treatment-intro-2200: url('../media/img/tratamientos-intro/tratamientos-2200.webp');
+$treatment-intro-1550: url('../media/img/tratamientos-intro/tratamientos-1550.webp');
+$treatment-intro-1200: url('../media/img/tratamientos-intro/tratamientos-1200.webp');
+$treatment-intro-800: url('../media/img/tratamientos-intro/tratamientos-800.webp');
+$treatment-intro-600: url('../media/img/tratamientos-intro/tratamientos-600.webp');
 
-.treatment-intro {
-    background: $treatment-intro no-repeat center; 
+.treatments-intro {
+    background: $treatment-intro-2200 no-repeat center; 
     background-size: cover;
     height: fit-content;
     width: 100%;
@@ -63,8 +67,16 @@ $treatment-intro: url('../media/img/prueba1.jpg');
     padding: 5px 20px 20px 20px; 
     margin-bottom: 20px;
     background-color: none; 
+
+   
     p{
         font-size: 1em;
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 }
 
@@ -85,6 +97,13 @@ $treatment-intro: url('../media/img/prueba1.jpg');
 
 
   @include mixin_media_query('desktop') {
+
+    .treatments-intro{
+        background: $treatment-intro-1550 no-repeat center; 
+        background-size: cover;
+    
+    }
+
     .tratamiento {
         width: 40%;
     }
@@ -98,3 +117,28 @@ $treatment-intro: url('../media/img/prueba1.jpg');
         height: 200px;
     }
   }
+
+
+    @include mixin_media_query('laptop') {
+        .treatments-intro{
+            background: $treatment-intro-1200 no-repeat center; 
+            background-size: cover;
+        
+        }
+    }
+
+    @include mixin_media_query('tablet') {
+        .treatments-intro{
+            background: $treatment-intro-800 no-repeat center; 
+            background-size: cover;
+        
+        }
+    }
+
+    @include mixin_media_query('movil') {
+        .treatments-intro{
+            background: $treatment-intro-600 no-repeat center; 
+            background-size: cover;
+        
+        }
+    }

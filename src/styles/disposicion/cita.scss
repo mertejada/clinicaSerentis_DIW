@@ -2,8 +2,9 @@
     max-width: 500px;
     margin: 50px auto;
     background-color: $color-white; //
-    padding: 20px;
+    padding: 0;
 }
+
 
 
 .form-element {
@@ -36,6 +37,26 @@
         vertical-align: middle;
     }
 
-
+    
+    /* Resto de tus estilos */
+    
 }
+
+
+@include mixin_media_query_min('tablet') {
+    .form-inline {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .input-group {
+        flex: 1;
+        margin-right: 10px; /* Espacio entre los campos */
+    
+        input[type="date"] {
+            width: 100% ;
+        }
+    }
+  }
+
 

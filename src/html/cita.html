@@ -7,6 +7,8 @@
     
       
     <link rel="stylesheet" href="../styles/principal.scss">
+    <link rel="stylesheet" href="../styles/main.css">
+
 
     
 
@@ -38,26 +40,33 @@
         <section id="form">
             <h1 class="white">Aquí comienza el <span class="bold">cambio</span></h1>
             <form action="#" method="POST" class="appointment-form">
-                <div class="form-element">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <div class="form-element form-inline">
+                    <div class="input-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
                 </div>
+
                 <div class="form-element">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
                 </div>
-                <div class="form-element">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+                
+                <div class="form-element form-inline">
+                    <div class="input-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha">Fecha de cita:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
                 </div>
-                <div class="form-element">
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="mail" required>
-                </div>
-                <div class="form-element">
-                    <label for="fecha">Fecha de cita:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
+
                 <div class="form-element">
                     <label for="comentario">Comentario:</label>
                     <textarea id="comentario" name="comentario" rows="4"></textarea>

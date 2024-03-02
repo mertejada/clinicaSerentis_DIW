@@ -30,14 +30,14 @@ p {
 h1 {
   font-family: Poppins;
   font-size: clamp(1.5rem, 4vw, 5rem);
-  color: #317f8d;
+  color: #267583;
   margin: 20px 0;
 }
 
 h2 {
   font-family: Poppins;
   font-size: clamp(1.5rem, 1.8vw, 3rem);
-  color: #317f8d;
+  color: #267583;
   margin: 20px 0;
 }
 
@@ -52,7 +52,7 @@ h3 {
 h4 {
   font-family: Poppins;
   font-size: clamp(1rem, 1.2vw, 2rem);
-  color: #619da8;
+  color: #81c0cb;
   margin: 20px 0;
 }
 
@@ -74,7 +74,7 @@ a {
 
 .blue-button {
   color: #FEFDFB !important;
-  background-color: #317f8d;
+  background-color: #267583;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -90,8 +90,8 @@ a {
 }
 
 .blue-noFill-button {
-  color: #317f8d;
-  border: 2px #317f8d solid;
+  color: #267583;
+  border: 2px #267583 solid;
 }
 
 .white-button {
@@ -447,7 +447,7 @@ button {
   margin: 0 20px;
 }
 .nav-links a:hover {
-  color: #317f8d;
+  color: #267583;
 }
 .nav-links a::after {
   transition: transform 0.3s ease;
@@ -823,7 +823,7 @@ button {
   color: #FEFDFB;
 }
 #form-section label {
-  color: #619da8;
+  color: #81c0cb;
   font-family: Poppins;
   font-weight: 400;
   margin-left: 10px;
@@ -992,7 +992,7 @@ button {
   color: #837a70;
 }
 .treatment-cont a {
-  color: #317f8d;
+  color: #267583;
   text-decoration: none;
 }
 .treatment-cont .treatment-description article {

@@ -406,41 +406,14 @@ button {
 }
 .treatment-intro {
   display: flex;
-  height: 30vh;
-  padding: 5%;
   justify-content: space-between;
   align-items: end;
-  background: url("../media/img/treatments-img/acne-2200.webp") no-repeat;
-  background-size: cover;
-}
-.treatment-intro h1 {
-  margin: 0;
-  color: #FEFDFB;
-}
-.treatment-intro a {
-  padding: 1%;
-  height: fit-content;
 }
 
 .treatment-cont {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10%;
-}
-.treatment-cont .treatment-related-list h2 {
-  color: #837a70;
-}
-.treatment-cont a {
-  color: #317f8d;
-  text-decoration: none;
-}
-.treatment-cont .treatment-description article {
-  margin: 0;
-  padding: 10px;
-  padding-top: 0%;
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
-  line-height: 1.5;
-  margin: 20px 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -452,9 +425,6 @@ button {
     flex-direction: column;
     align-items: start;
     justify-content: end;
-  }
-  .treatment-intro * {
-    margin: 4px;
   }
 }
 .nav-logo {
@@ -1001,6 +971,42 @@ button {
   .treatments-intro {
     background: url("../media/img/tratamientos-intro/tratamientos-600.webp") no-repeat center;
     background-size: cover;
+  }
+}
+.treatment-intro {
+  height: 30vh;
+  padding: 5%;
+  background: url("../media/img/treatments-img/acne-2200.webp") no-repeat;
+  background-size: cover;
+}
+.treatment-intro h1 {
+  margin: 0;
+  color: #FEFDFB;
+}
+.treatment-intro a {
+  padding: 1%;
+  height: fit-content;
+}
+
+.treatment-cont .treatment-related-list h2 {
+  color: #837a70;
+}
+.treatment-cont a {
+  color: #317f8d;
+  text-decoration: none;
+}
+.treatment-cont .treatment-description article {
+  margin: 0;
+  padding: 10px;
+  padding-top: 0%;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .treatment-intro * {
+    margin: 4px;
   }
 }
 

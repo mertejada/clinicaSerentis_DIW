@@ -1,28 +1,9 @@
-$tr-bk:url('../media/img/treatments-img/acne-2200.webp');
 
 
 .treatment-intro{
     display: flex;
-    height: 30vh;
-    padding: 5%;
     justify-content: space-between;
     align-items:end;
-    background: $tr-bk no-repeat;
-    background-size: cover;
-
-    //que el primer h2
-    
-    h1{
-        //que el texto se pegue abajo
-        margin: 0;
-        color: $color-white;
-    }
-
-    a{
-        padding: 1%;
-        height: fit-content;
-
-    }
     
 }
 
@@ -30,25 +11,6 @@ $tr-bk:url('../media/img/treatments-img/acne-2200.webp');
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 10%;
-
-    .treatment-related-list h2{
-        color:$color-brown;
-    }
-
-    a{
-        color: $color-blue;
-        text-decoration: none;
-    }
-
-    .treatment-description article{
-        margin: 0;
-        padding: 10px;
-        padding-top: 0%;
-        font-size: clamp(1rem, 1.2vw, 1.5rem); 
-        line-height: 1.5;
-        margin: 20px 0;
-    }
-
 
 }
 
@@ -65,8 +27,5 @@ $tr-bk:url('../media/img/treatments-img/acne-2200.webp');
         justify-content: end;
         
         
-        * {
-            margin: 4px;
-        }
     }
 }

@@ -384,7 +384,7 @@ button {
 
 .imagen {
   position: relative;
-  overflow: hidden; /* Asegura que la imagen no se desborde */
+  overflow: hidden;
 }
 
 .imagen h3 {
@@ -837,7 +837,7 @@ button {
   }
 }
 #form-section {
-  background: url("../media/img/form-2200.webp") no-repeat center;
+  background: url("../media/img/cita/form-2200.webp") no-repeat center;
   background-size: cover;
   height: fit-content;
   padding: 8%;
@@ -865,12 +865,26 @@ button {
 }
 #form-section h1 {
   color: #FEFDFB;
-  font-size: 3em;
   text-align: center;
   margin: 6%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (max-width: 1550px) {
+  #form-section {
+    background: url("../media/img/cita/form-1550.webp") no-repeat center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #form-section {
+    background: url("../media/img/cita/form-1200.webp") no-repeat center;
+  }
+}
+@media screen and (max-width: 320px) {
+  #form-section {
+    background: url("../media/img/cita/form-800.webp") no-repeat center;
+  }
+}
 .treatments-intro {
   background: url("../media/img/tratamientos-intro/tratamientos-2200.webp") no-repeat center;
   background-size: cover;

@@ -1,8 +1,12 @@
-$bk-img : url('../media/img/form-2200.webp');
+$cita-img-2200 : url('../media/img/cita/form-2200.webp');
+$cita-img-1550 : url('../media/img/cita/form-1550.webp');
+$cita-img-1200 : url('../media/img/cita/form-1200.webp');
+$cita-img-800 : url('../media/img/cita/form-800.webp');
+$cita-img-600 : url('../media/img/cita/form-600.webp');
 
 
 #form-section{
-    background: $bk-img no-repeat center;
+    background: $cita-img-2200 no-repeat center;
     background-size: cover;
     height: fit-content;
     padding: 8%;
@@ -35,11 +39,30 @@ $bk-img : url('../media/img/form-2200.webp');
 
     h1{
         color: $color-white;
-        font-size: 3em;
         text-align: center;
         margin: 6%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
         
     }
 
+}
+
+
+    @include mixin_media_query('desktop') {
+        #form-section{
+            background: $cita-img-1550 no-repeat center;
+        }
+
+    }
+
+    @include mixin_media_query('laptop') {
+        #form-section{
+            background: $cita-img-1200 no-repeat center;
+        }
+    }
+
+     @include mixin_media_query('movil') {
+        #form-section{
+            background: $cita-img-800 no-repeat center;
+    }
 }

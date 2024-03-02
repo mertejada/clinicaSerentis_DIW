@@ -19,7 +19,7 @@
 
 .imagen {
     position: relative;
-    overflow: hidden; /* Asegura que la imagen no se desborde */
+    overflow: hidden; 
 }
 
 .imagen h3 {
@@ -31,8 +31,6 @@
 
 
 @include mixin_media_query('tablet') {
-
-    //que se vean uno a uno
     .tratamientos{
         display: flex;
         flex-direction: column;
@@ -43,6 +41,5 @@
         }
     }
 
-    //que el width se ajuste al tamaño de la pantalla
     
 }

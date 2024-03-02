@@ -100,8 +100,6 @@ $index-800: url('../media/img/index/index-800.webp');
       }
     }
   
-    
-      
   }
   
   /* PARTNERS */
@@ -152,10 +150,13 @@ $index-800: url('../media/img/index/index-800.webp');
   }
 
   @include mixin_media_query('tablet') {
+    .indexSerentis #indexSerentis-text {
+      width: 80%;
+    }
 
     .indexSerentis{
       img{
-        width: 50%;
+        width: 80%;
       }
     }
 

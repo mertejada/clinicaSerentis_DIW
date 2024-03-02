@@ -652,8 +652,11 @@ button {
   }
 }
 @media screen and (max-width: 800px) {
+  .indexSerentis #indexSerentis-text {
+    width: 80%;
+  }
   .indexSerentis img {
-    width: 50%;
+    width: 80%;
   }
   .indexIntro {
     background-image: url("../media/img/index/index-1200.webp");

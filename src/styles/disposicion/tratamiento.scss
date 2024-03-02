@@ -10,6 +10,8 @@ $tr-bk:url('../media/img/treatments-img/acne-2200.webp');
     background: $tr-bk no-repeat;
     background-size: cover;
 
+    //que el primer h2
+    
     h1{
         //que el texto se pegue abajo
         margin: 0;
@@ -28,6 +30,10 @@ $tr-bk:url('../media/img/treatments-img/acne-2200.webp');
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 10%;
+
+    .treatment-related-list h2{
+        color:$color-brown;
+    }
 
     a{
         color: $color-blue;

@@ -17,7 +17,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   #contenido {
-    margin: 10% 4% 0% 4%;
+    margin: 10% 3% 0% 3%;
   }
 }
 
@@ -259,7 +259,6 @@ button {
   top: 50%;
   transform: translateY(-50%);
   text-shadow: 0px 0px 5px #292929;
-
 }
 
 .prev {
@@ -328,7 +327,6 @@ button {
 .form-element {
   margin-bottom: 15px;
   color: #FEFDFB;
-  /* Resto de tus estilos */
 }
 .form-element label {
   display: block;
@@ -838,24 +836,39 @@ button {
     background-size: cover;
   }
 }
-#form {
-  background: url("../media/img/cita2.webp") no-repeat center;
+#form-section {
+  background: url("../media/img/form-2200.webp") no-repeat center;
   background-size: cover;
-  padding: 20%;
+  height: fit-content;
+  padding: 8%;
   margin: 0%;
 }
-#form input, #form textarea {
+#form-section form {
+  padding: 5%;
+}
+#form-section form .form-element {
+  color: #FEFDFB;
+}
+#form-section label {
+  color: #9CCBD3;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-left: 10px;
+}
+#form-section input, #form-section textarea {
   border: none;
   border-radius: 30px;
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
-  background-color: rgba(254, 253, 251, 0.5);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  background-color: rgba(254, 253, 251, 0.8);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
-#form h1 {
+#form-section h1 {
   color: #FEFDFB;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
+  margin: 6%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .treatments-intro {

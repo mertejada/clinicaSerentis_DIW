@@ -79,7 +79,7 @@ a {
 }
 
 .blue-button:hover {
-  background-color: #837a70;
+  background-color: #635B52;
   color: #FEFDFB !important;
   transition: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -307,7 +307,7 @@ button {
 }
 .clinica-intro {
   display: flex;
-  align-items: center; /* Esto alinea los elementos horizontalmente */
+  align-items: center;
 }
 
 .values-container {
@@ -536,7 +536,6 @@ button {
 /* SERENTIS */
 .indexSerentis {
   text-align: left;
-  margin-left: 5%;
 }
 .indexSerentis img {
   width: 30%;
@@ -616,7 +615,7 @@ button {
     margin: 50px;
   }
   .rrss-slide img {
-    width: 800px;
+    width: 500px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -989,7 +988,7 @@ button {
 }
 
 .treatment-cont .treatment-related-list h2 {
-  color: #837a70;
+  color: #635B52;
 }
 .treatment-cont a {
   color: #267583;
